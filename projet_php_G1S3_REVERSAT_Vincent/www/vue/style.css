@@ -1,0 +1,89 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 1em;
+	padding-bottom: 4em;
+}
+
+div#user-div{
+	background: linear-gradient(to right, rgba(247,247,247,1) 1%,rgba(200,200,200,1) 100%);
+	position: fixed;
+	bottom: 0%;
+	height: 2em;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+	border-top: 2px solid Silver;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.8em;
+}
+
+div#user-div p{
+	margin: 0em;
+}
+
+div.nav-button{ 
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+a{
+	display: block;
+	text-decoration-line: none;
+	color: black;
+}
+
+a.nav-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: 5em;
+	margin-top: 1em;
+	background-color: Silver;
+	border: 0.2em groove Silver;
+	border-radius: 0.2em;
+}
+
+a#logout{
+	background-color: Silver;
+	border: 0.2em groove Silver;
+	border-radius: 0.2em;
+}
+
+a#home{
+	min-width: 10%;
+	width: 15%;
+	text-align: center;
+	position: fixed;
+	right: 2%;
+	top: 2%;
+	background-color: rgb(230,230,230);
+	border: 0.2em groove rgb(230,230,230);
+	border-radius: 0.2em;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td, th{
+	padding: 0.2em 1em 0.2em 1em;
+	border: 0.2em solid black;
+}
+
+span{
+	position: absolute;
+	right: 5vw;
+	top: 20vh;
+	display: none;
+	z-index: 20;
+}
+
+td:hover span{
+	display: block;
+}
